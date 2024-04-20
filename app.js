@@ -11,7 +11,7 @@ openMenuBtn.classList.toggle("rotate")
 
 const app = document.querySelector(".app")
 
-const inactiveTime = 100000
+const inactiveTime = 3000
 
 let mouseLastMoveTime = new Date()
 
