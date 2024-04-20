@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Meditation App</title>
+</head>
+<body>
+    
+
+    <div class="video">
+        <video autoplay loop>
+            <source src="summer.mp4">
+        </video>
+    </div>
+
+
+    <div class="app">
+        <div class="audio">
+            <audio>
+                <source src="meditation.mp3" type="audio/mpeg"> 
+            </audio>
+            <div class="pause">
+                <img src="pause-button.png" alt="pause">
+            </div>
+
+
+            <div class="progress">
+                <svg>
+                    <rect class="rect1" stroke-width="10" rx="8" height="150" width="150" y="25" x="25" stroke="#F07281" fill="transparent"></rect>
+                </svg>
+                <svg>
+                    <rect class="rect" stroke-width="10" rx="8" height="150" width="150" y="25" x="25" stroke="#FFFF" fill="transparent"></rect>
+                </svg>
+                <div class="audio-remaining-time">
+                    00:00
+                </div>
+            </div>
+
+
+            <div class="play">
+                <img src="play-button (1).png" alt="play">
+            </div>
+        </div>
+        <div class="durations">
+            
+            <div class="duration" audio-duration="120">
+                <img src="2min.png" alt="2 min">
+                <p>2 min</p>
+            </div>
+            <div class="duration" audio-duration="300">
+                <img src="5min.png" alt="5 min">
+                <p>5 min</p>
+            </div>
+            <div class="duration" audio-duration="600">
+                <img src="10min.png" alt="10 min">
+                <p>10 min</p>
+            </div>
+             <div class="duration" audio-duration="1200">
+                <img src="20min.png" alt="20 min">
+                <p>20 min</p>
+            </div>
+        </div>
+        <div class="seasons open">
+            <div class="season" video-src="spring.mp4">
+                <img src="spring.png" alt="spring">
+            </div>
+            <div class="season" video-src="winter.mp4">
+                <img src="winter.png" alt="winter">
+            </div>
+            <div class="season" video-src="summer.mp4">
+                <img src="summer (1).png" alt="summer">
+            </div>
+            <div class="season" video-src="autumn.mp4">
+                <img src="autumn.png" alt="autumn">
+            </div>
+            <div class="toggle-menu rotate">
+                <img src="right-arrow.png" alt="open up the menu">
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
